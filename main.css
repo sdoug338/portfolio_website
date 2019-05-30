@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Nunito, sans-serif;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+/*Nav bar styles*/
+nav ul li {
+    display: inline-block;
+    font-size: 1.1em;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "name name name navigation navigation navigation";
+    color: white;
+    background: black;
+    position: fixed;
+    width: 100%;
+}
+header a {
+    color: white;
+    padding: 24px 15px;
+}
+header a:hover {
+    background: maroon;
+}
+
+/*CTA Styles */
+.name {
+    font-family: Alegreya SC, serif;
+    grid-area: name;
+    margin-top: 15px;
+    justify-self: center;
+    padding-bottom: 15px;
+}
+.mainnav {
+    grid-area: navigation;
+    margin-top: 26px;
+}
+.cta {
+    background-image: url("cta-background.png");
+    color: white;
+    text-align: center;
+}
+.cta h2 {
+    padding: 300px 0 10px 0;
+    font-size: 2.2em;
+}
+.cta button {
+    margin-bottom: 250px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 1.2em;
+}
+.cta button:hover {
+    background: transparent;
+    box-shadow: 0 0 0 2px white inset;
+}
+.cta p {
+    padding: 30px 0;
+    font-size: 1.2em;
+}
+.cta p span {
+    font-style: italic;
+}
+.cta img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+.heading {
+    text-align: center;
+    font-family: Alegreya SC, serif;
+    font-size: 2em;
+    padding: 25px;
+}
+.one article {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". me . desc desc desc . ."
+                         ". . . . resume . . .";
+    grid-row-gap: 20px;
+}
+.me {
+    grid-area: me;
+    margin-top: 40px;
+}
+.desc {
+    grid-area: desc;
+    align-self: center;
+    font-size: 1.2em;
+}
+.resume {
+    grid-area: resume;
+    margin-bottom: 130px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 1.2em;
+}
+.resume:hover {
+    background: transparent;
+    box-shadow: 0 0 0 2px black inset;
+    color: black;
+}
+.two {
+    background: maroon;
+    color: white;
+}
+.two article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: ". card1 card1 . card2 card2 . card3 card3 . "
+
+}
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.two article {
+    padding-bottom: 100px;
+}
+.card1, .card2, .card3 {
+    background: #f1f1f1;
+    color: black;
+    border-radius: 5px;
+    padding: 30px 60px;
+}
+.two article div h3 {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.4em;
+}
+.two article div h4 {
+    text-align: left;
+
+}
+.two article div ul {
+    padding: 15px 0;
+}
+.demo {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 1em;
+}
+.demo:hover {
+    background: transparent;
+    box-shadow: 0 0 0 2px black inset;
+    color: black;
+}
+.source {
+    display: inline-block;
+}
+.buttons {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.source a{
+    color: maroon;
+    text-decoration: underline;
+}
+.source:hover a{
+    color: black;
+}
+@media only screen and (max-width: 920px) { 
+    .two article {
+        grid-template-areas: ". . card1 card1 card1 card1 card1 card1 . . "
+        ". . card2 card2 card2 card2 card2 card2 . . "
+        ". . card3 card3 card3 card3 card3 card3 . . ";
+        grid-gap: 2em;
+    }
+}
+@media only screen and (max-width: 400px) { 
+    .two article {
+        grid-template-areas: ". card1 card1 card1 card1 card1 card1 card1 card1 . "
+        ". card2 card2 card2 card2 card2 card2 card2 card2 . "
+        ". card3 card3 card3 card3 card3 card3 card3 card3 . ";
+    }
+}
+.four {
+    background: maroon;
+    color: white;
+}
+.email {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 1em;
+}
+.link {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 1em;
+}
